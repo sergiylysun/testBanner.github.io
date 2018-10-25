@@ -1,0 +1,86 @@
+/* reset */
+/* main variables */
+body { margin: 0px; padding: 0px; font-family: Arial, sans-serif; background-color: #FFF; height: 100%; line-height: 1; position: relative; font-size: 13px !important; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/*MAIN*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main { display: block; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-width: 0px; padding: 0px; margin: 0px; }
+
+html { height: 100%; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
+
+input, textarea { color: #333; font-family: Arial, sans-serif; outline: none; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; -webkit-appearance: none; }
+
+input[type="button"], input[type="submit"], button { cursor: pointer; }
+
+td { margin: 0px; padding: 0px; }
+
+form { padding: 0px; margin: 0px; }
+
+a { color: #100da9; -webkit-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; text-decoration: none; outline: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+a, span, div, button { outline: none !important; }
+
+input[type=submit], input[type=button], button { -webkit-appearance: none; outline: none; }
+
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+*:before, *:after { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.clearfix:after, .wrapper:after, .row:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+@font-face { font-family: 'OpenSans'; src: url("../fonts/OpenSans-Regular.ttf"); font-weight: 300; font-style: normal; font-stretch: normal; unicode-range: U+0020-FFFD; }
+
+@font-face { font-family: 'SourceSansPro'; src: url("../fonts/SourceSansPro-Regular.ttf"); font-weight: 300; font-style: normal; font-stretch: normal; unicode-range: U+0020-FFFD; }
+
+@font-face { font-family: 'Roboto'; src: url("../fonts/Roboto-Regular.ttf"); font-weight: 300; font-style: normal; font-stretch: normal; unicode-range: U+0020-FFFD; }
+
+@font-face { font-family: 'Exo2'; src: url("../fonts/Exo2-Regular.ttf"); font-weight: 300; font-style: normal; font-stretch: normal; unicode-range: U+0020-FFFD; }
+
+.banner { width: 320px; height: 150px; margin: 0 auto; margin-top: 100px; background-image: url("../img/bg.png"); position: relative; text-transform: uppercase; font-family: 'Roboto'; }
+
+.btn, .btn_2 { width: 160px; height: 34px; line-height: 34px; text-align: center; display: block; color: #fff; font-size: 18px; background-color: #e0002f; border: 0.833333px solid #ff2754; -webkit-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: 3.5px 6.1px 36px rgba(0, 0, 0, 0.7); box-shadow: 3.5px 6.1px 36px rgba(0, 0, 0, 0.7); position: absolute; bottom: 15px; right: 20px; overflow: hidden; }
+
+.btn .btn-blick, .btn_2 .btn-blick { position: absolute; top: -105px; -webkit-animation: 2s linear infinite btn-animation; animation: 2s linear infinite btn-animation; }
+
+@-webkit-keyframes btn-animation { 0% { left: 10px; }
+  100% { left: 300px; } }
+
+@keyframes btn-animation { 0% { left: 10px; }
+  100% { left: 300px; } }
+
+.slider { width: 160px; height: 70px; position: absolute; top: 15px; right: 20px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+.slide { position: absolute; opacity: 0; z-index: 1; text-align: center; color: #fff; font-size: 27px; }
+
+.showing { opacity: 1; z-index: 2; }
+
+/* ========================== banner_2 ===================== */
+.banner-big { max-width: 1024px; height: 150px; margin: 0 auto; margin-top: 100px; background-image: url("../img/bg_2.png"); position: relative; text-transform: uppercase; font-family: 'Roboto'; }
+
+.btn_2 { top: 50%; margin-top: -17px; right: 30px; }
+
+.slider-big { width: 400px; height: 100%; position: absolute; top: 0; left: 50%; margin-left: -150px; }
+
+.slide-big { width: 100%; height: 100%; position: absolute; opacity: 0; z-index: 1; -webkit-transition: opacity 1s; -o-transition: opacity 1s; transition: opacity 1s; text-align: center; color: #fff; font-size: 40px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+.slide-img-box { width: 400px; height: 150px; overflow: hidden; position: absolute; top: 0; left: 0; }
+
+.slide-img-box img { max-height: 100%; position: absolute; -webkit-filter: grayscale(0.7) opacity(0.4); filter: grayscale(0.7) opacity(0.4); opacity: 0; }
+
+.slide-img-box .lebron { bottom: 0; left: -40px; z-index: 2; }
+
+.slide-img-box .federer { bottom: 0; left: 20%; z-index: 1; }
+
+.slide-img-box .messi { bottom: 0; right: -40px; z-index: 2; }
+
+.showing-big { opacity: 1; z-index: 3; }
+
+/*# sourceMappingURL=style.css.map */

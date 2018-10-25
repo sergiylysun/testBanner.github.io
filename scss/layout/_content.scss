@@ -1,0 +1,149 @@
+
+
+.banner {
+	width: 320px;
+	height: 150px;
+	margin: 0 auto;
+	margin-top: 100px;
+	background-image: url("../../img/bg.png");
+	position: relative;
+	text-transform: uppercase;
+	font-family: 'Roboto';
+}
+
+.btn, .btn_2 {
+	width: 160px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	background-color: #e0002f;
+	border: 0.833333px solid #ff2754;
+	border-radius: 4px;
+	box-shadow: 3.5px 6.1px 36px rgba(0, 0, 0, 0.7);
+	position: absolute;
+	bottom: 15px;
+	right: 20px;
+	overflow: hidden;
+
+	.btn-blick {
+		position: absolute;
+		top: -105px;
+		animation: 2s linear infinite btn-animation;
+	}
+}
+
+@keyframes btn-animation {
+	 0%   {left: 10px;}
+	 100% {left: 300px;}
+}
+
+.slider {
+	width: 160px;
+	height: 70px;
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slide {
+	position: absolute;
+	opacity: 0;
+	z-index: 1;
+	text-align: center;
+	color: #fff;
+	font-size: 27px;
+}
+
+.showing {
+	opacity: 1;
+	z-index: 2;
+}
+
+/* ========================== banner_2 ===================== */
+
+
+.banner-big {
+	max-width: 1024px;
+	height: 150px;
+	margin: 0 auto;
+	margin-top: 100px;
+	background-image: url("../../img/bg_2.png");
+	position: relative;
+	text-transform: uppercase;
+	font-family: 'Roboto';
+}
+
+.btn_2 {
+	top: 50%;
+	margin-top: -17px;
+	right: 30px;
+}
+
+.slider-big {
+	width: 400px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -150px;
+}
+
+.slide-big {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0;
+	z-index: 1;
+	transition: opacity 1s;
+	text-align: center;
+	color: #fff;
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slide-img-box {
+	width: 400px;
+	height: 150px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	img {
+		max-height: 100%;
+		position: absolute;
+		filter: grayscale(0.7) opacity(.4);
+		opacity: 0;
+	}
+
+	.lebron {
+		bottom: 0;
+		left: -40px;
+		z-index: 2;
+	}
+
+	.federer {
+		bottom: 0;
+		left: 20%;
+		z-index: 1;
+	}
+
+	.messi {
+		bottom: 0;
+		right: -40px;
+		z-index: 2;
+	}
+}
+
+.showing-big {
+	opacity: 1;
+	z-index: 3;
+}
